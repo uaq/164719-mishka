@@ -181,19 +181,14 @@ fieldset {
   border-style: none;
   padding: 0px;
 }
-.order__type-title,
-.order__color-title,
-.order__bio-title,
-.order__tel-title,
-.order__email-title,
-.order__additional-tile {
+.order-title {
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
   color: #63d1bb;
   text-transform: uppercase;
 }
-.order-title {
+.order-prop {
   font-size: 17px;
   font-weight: bold;
   line-height: 18px;
@@ -297,9 +292,6 @@ fieldset {
   text-align: center;
   padding: 10px;
 }
-.promo-hit__btn-buy {
-  padding: 14px 83px;
-}
 .promo-hit__descr {
   font-size: 15px;
   line-height: 24px;
@@ -310,7 +302,7 @@ fieldset {
   padding: 27px 0px 10px;
 }
 .promo-hit__btn {
-  padding: 15px 0px;
+  padding: 15px 80px;
 }
 .reviews {
   padding: 10px 30px;
