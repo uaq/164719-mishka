@@ -13,8 +13,9 @@
         <a class="page-header__logo-link" href="/index.html">
           <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
         </a>
-        <h1 class="page-header__title">Вязание на заказ</h1>
       </div>
+      <h1 class="page-header__title">Вязание на заказ</h1>
+
 
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -46,10 +47,10 @@
 
           <form class="order__form" id="order__form" action="https://echo.htmlacademy.ru/" method="post">
 
-            <div class="order__form-type">
+            <div class="order__type">
               <fieldset name="order__form">
 
-                <legend>Тип</legend>
+                <legend class="order__type-title">Тип</legend>
                 <label for="accessory">Аксессуар для интерьера</label>
                 <input type="radio" name="accessory" id="accessory" value="Аксессуар для интерьера" checked>
 
@@ -63,24 +64,24 @@
 
               <fieldset name="order__form">
 
-                  <legend>Цвет</legend>
+                  <legend class="order__color-title">Цвет</legend>
 
-                  <label for="white">Белый</label>
+                  <label for="white" class="order__color-value order-title">Белый</label>
                   <input type="checkbox" name="white" id="white" value="Белый" checked>
 
-                  <label for="grey">Серый</label>
+                  <label for="grey" class="order__color-value order-title">Серый</label>
                   <input type="checkbox" name="grey" id="grey" value="Серый" checked>
 
-                  <label for="tiffany">&laquo;Тиффани&raquo;</label>
+                  <label for="tiffany" class="order__color-value order-title">&laquo;Тиффани&raquo;</label>
                   <input type="checkbox" name="tiffany" id="tiffany" value="Тиффани">
 
-                  <label for="black">Черный</label>
+                  <label for="black" class="order__color-value order-title">Черный</label>
                   <input type="checkbox" name="black" id="black" value="Черный">
 
-                  <label for="rose">Розовый</label>
+                  <label for="rose" class="order__color-value order-title">Розовый</label>
                   <input type="checkbox" name="rose" id="rose" value="Розовый">
 
-                  <label for="orange">Оранжевый</label>
+                  <label for="orange" class="order__color-value order-title">Оранжевый</label>
                   <input type="checkbox" name="orange" id="orange" value="Оранжевый">
 
                 </fieldset>
@@ -88,42 +89,42 @@
               </div>
 
               <div class="order__bio">
-                <fieldset name="order__form">
+                <fieldset name="order__form" class="order__bio-group">
 
-                  <legend>ФИО</legend>
+                  <legend class="order__bio-title">ФИО</legend>
 
-                  <label for="name">Имя:</label>
-                  <input type="text" name="name" id="name" placeholder="Укажите ваше имя*" required>
+                  <label for="name" class="order__bio-value order-title">Имя:</label>
+                  <input type="text" name="name" id="name" placeholder="Укажите ваше имя<sup>*</sup>" required>
 
-                  <label for="surname">Фамилия:</label>
+                  <label for="surname" class="order__bio-value order-title">Фамилия:</label>
                   <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
 
-                  <label for="patronymic">Отчество:</label>
+                  <label for="patronymic" class="order__bio-value order-title">Отчество:</label>
                   <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
 
                 </fieldset>
               </div>
 
               <div class="order__tel">
-                <label for="tel">Тел</label>
+                <label for="tel" class="order__tel-title">Тел</label>
                 <input type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
               </div>
 
               <div class="order__email">
-                <label for="email">E-MAIL</label>
+                <label for="email" class="order__email-title">E-MAIL</label>
                 <input type="email" name="email" id="email" placeholder="Ваш E-mail*" required>
               </div>
 
               <div class="order__additional">
-                <label for="wishes">ДОП</label>
+                <label for="wishes" class="order__additional-tile">ДОП</label>
                 <textarea name="wishes" id="wishes" rows="5" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
 
               <div class="order__required">*Поля обязательны для заполнения</div>
 
-              <div class="order__submit">
-                <input type="submit" value="Отправить заказ">
-              </div>
+
+                <input type="submit" class="order__submit btn" value="Отправить заказ">
+
           </form>
 </section>
 

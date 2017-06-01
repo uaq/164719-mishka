@@ -4,6 +4,32 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+          <!-- Pixel Glass -->
+      <style>
+        HTML {
+          background-repeat: no-repeat;
+          background-position:  50% 0;
+          /* Mobile layout by default */
+          background-image: url( "img/320.png" );
+        }
+        /* Tablet */
+        @media ( min-width: 760px ) {
+          HTML {
+            /* Tablet layout */
+            background-image: url( "img/760.png" );
+          }
+        }
+        /* Desktop */
+        @media ( min-width: 960px ) {
+          HTML {
+            /* Desktop layout */
+            background-image: url( "img/960.png" );
+          }
+        }
+      </style>
+      <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+      <script src="../node_modules/pixel-glass/script.js"></script>
+      <!-- // Pixel Glass -->
     <base href="https://htmlacademy-adaptive.github.io/164719-mishka/3/">
 </head>
   <body>
@@ -11,7 +37,7 @@
     <header class="page-header">
 
       <div class="page-header__logo">
-        <a class="page-header__logo-link" href="#">
+        <a class="page-header__logo-link">
           <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
         </a>
       </div>
@@ -66,37 +92,35 @@
         <div class="promo-hit__props-wrapper">
 
           <ul class="promo-hit__props">
-            <li class="promo-hit__prop-name">Цвет:</li>
-            <li class="promo-hit__subtitle-value">&laquo;Тиффани&raquo;/серый</li>
-          </ul>
-
-          <ul class="promo-hit__props">
-            <li class="promo-hit__prop-name">Диаметр:</li>
-            <li class="promo-hit__subtitle-value">25 см</li>
-          </ul>
-
-          <ul class="promo-hit__props">
-            <li class="promo-hit__prop-name">Высота:</li>
-            <li class="promo-hit__subtitle-value">15 см</li>
+            <li class="promo-hit__prop-name">
+              <span class="promo-hit__prop-value">Цвет:</span>
+              <span class="promo-hit__prop-value">&laquo;Тиффани&raquo;/серый</span>
+            </li>
+            <li class="promo-hit__prop-name">
+              <span class="promo-hit__prop-value">Диаметр:</span>
+              <span class="promo-hit__prop-value">25 см</span>
+            </li>
+            <li class="promo-hit__prop-name">
+              <span class="promo-hit__prop-value">Высота:</span>
+              <span class="promo-hit__prop-value">15 см</span>
+            </li>
           </ul>
 
         </div>
 
-          <img class="promo-hit__pict" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото товара">
+          <img class="promo-hit__pict" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
 
             <div class="promo-hit__cost">
               <div class="promo-hit__cost-price">Цена: 990 руб.</div>
             </div>
+              <input type="button" class="promo-hit__btn btn" value="Заказать">
 
-            <div class="promo-hit__btn">
-              <input type="button" class="promo-hit__btn-buy" value="Заказать">
-            </div>
 
 
       </section>
 
       <section class="about-company">
-        <h2 class="about-company__title">Коротко о нас</h2>
+        <h2 class="about-company__title">Коротко о нас:</h2>
 
         <ul class="about-company__list">
             <li class="about-company__item about-company__item--materials">Экологически чистые материалы</li>
@@ -128,9 +152,8 @@
           <input type="button" class="reviews__pagination-item reviews__pagination-item--prev" value="Назад">
           <input type="button" class="reviews__pagination-item reviews__pagination-item--next" value="Вперед">
         </div>
-        <div class="reviews__btn">
-          <input type="button" class="reviews__btn-write" value="Написать">
-        </div>
+        <input type="button" class="reviews__btn btn" value="Написать">
+
 
       </section>
 
@@ -140,13 +163,16 @@
           <h2 class="contacts__title">Контакты</h2>
 
           <ul class="contacts__list">
-            <li class="contacts__list-prop">e-mail:</li>
-            <li class="contacts__list-value"><a class="contacts__value-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></li>
-          </ul>
-
-          <ul class="contacts__list">
-            <li class="contacts__list-prop">адрес:</li>
-            <li class="contacts__list-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</li>
+            <li class="contacts__list-prop">
+              <span class="contacts__list-value">e-mail:</span>
+              <span class="contacts__list-value">
+              <a class="contacts__value-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </span>
+            </li>
+            <li class="contacts__list-prop">
+              <span class="contacts__list-value">адрес:</span>
+              <span class="contacts__list-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+            </li>
           </ul>
 
         </div>
@@ -158,7 +184,7 @@
       </section>
 
       <div class="feedback">
-        <input type="button" class="feedback__btn" value="Напишите нам">
+        <input type="button" class="feedback__btn btn" value="Напишите нам">
       </div>
 
     </main>
