@@ -10,7 +10,7 @@
     <!--🚩start header🚩-->
     <header class="page-header">
       <div class="page-header__logo">
-        <a class="page-header__logo-link" href="/index.html">
+        <a class="page-header__logo-link" href="index.html">
           <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
         </a>
       </div>
@@ -20,19 +20,16 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог</a>
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Новости</a>
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Акции</a>
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Доставка</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
+          <li class="main-nav__item main-nav__item--basket">
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
 
@@ -46,8 +43,18 @@
 
           <ul class="page-catalog__list">
             <li class="page-catalog__item">
-              <img class="page-catalog__pict" src="http://placehold.it/260x195" width="260" height="195" alt="Фото товара">
+              <img class="page-catalog__pict" src="img/photo-1-mobile@1x.jpg" width="258" height="195" alt="Зайчик-попрыгайчик">
               <h3 class="page-catalog__item-name">Зайчик-попрыгайчик</h3>
+              <div class="page-catalog__item-prop">Рост 30 см, вес 200 г</div>
+              <div class="page-catalog__order">
+                <div class="page-catalog__order-price">1200 руб.</div>
+                <input type="button" class="page-catalog__order-btn" value="В корзину">
+              </div>
+            </li>
+
+            <li class="page-catalog__item">
+              <img class="page-catalog__pict" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+              <h3 class="page-catalog__item-name">Корзинка для белья</h3>
               <div class="page-catalog__item-prop">Диаметр 15 см, высота 10 см</div>
               <div class="page-catalog__order">
                 <div class="page-catalog__order-price">690 руб.</div>
@@ -56,7 +63,7 @@
             </li>
 
             <li class="page-catalog__item">
-              <img class="page-catalog__pict" src="http://placehold.it/260x195" width="260" height="195" alt="Фото товара">
+              <img class="page-catalog__pict" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка игрушек">
               <h3 class="page-catalog__item-name">Большая корзинка игрушек</h3>
               <div class="page-catalog__item-prop">Диаметр 30 см, высота 30 см</div>
               <div class="page-catalog__order">
@@ -73,15 +80,13 @@
         <h2 class="production__title">Процесс производства</h2>
 
         <div class="production__video">
-          <video controls preload="metadata" width="260" height="150"></video>
+          <video preload="metadata" width="260" height="150" poster="img/video-mobile@1x.jpg"></video>
         </div>
 
         <div class="production__video-desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
+
+        <input type="button" class="production__btn btn" value="Сделать заказ">
       </div>
-
-      <input type="button" class="make-order__btn btn" value="Сделать заказ">
-
-
     </main>
 
     <footer class="page-footer">
