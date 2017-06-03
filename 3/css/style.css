@@ -203,7 +203,7 @@ body {
   padding: 18px 60px;
 }
 .order {
-  width: 260px;
+  width: 320px;
   margin: 0 auto;
 }
 .order__descr {
@@ -215,7 +215,7 @@ fieldset {
   border-style: none;
   padding: 0px;
 }
-.order__title--type {
+.order__title {
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
@@ -227,23 +227,26 @@ fieldset {
   font-weight: bold;
   line-height: 18px;
 }
-.page-catalog {
+.order__submit {
+  margin: 10px 33px;
+}
+.catalog {
   width: 260px;
   margin: 0 auto;
 }
-.page-catalog__list {
+.catalog__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.page-catalog__order-price {
+.catalog__order-price {
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
   float: left;
   padding: 20px;
 }
-.page-catalog__order-btn {
+.catalog__order-btn {
   font-size: 0;
   padding: 15px;
   background-image: url(../img/icon-cart.svg);
@@ -255,12 +258,12 @@ fieldset {
   margin: 15px;
   cursor: pointer;
 }
-.page-catalog__item {
+.catalog__item {
   padding: 0 0 65px;
   border: 1px solid #ededed;
   margin: 20px 0;
 }
-.page-catalog__item-prop {
+.catalog__item-prop {
   font-size: 13px;
   line-height: 30px;
   color: #444444;
@@ -269,7 +272,7 @@ fieldset {
   margin: 0 auto;
   padding: 0 30px 20px 0px;
 }
-.page-catalog__item-name {
+.catalog__item-name {
   font-size: 17px;
   line-height: 24px;
   padding: 10px 20px;
