@@ -41,10 +41,9 @@
           <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
         </a>
       </div>
-      <h1 class="page-header__title page-header__title--main">Милые штуки ручной работы для дома</h1>
 
       <nav class="main-nav">
-
+        <div class="main-nav__toggle"></div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -61,6 +60,8 @@
         </ul>
 
       </nav>
+
+      <h1 class="page-header__title page-header__title--main">Милые штуки ручной работы для дома</h1>
 
     </header>
 
@@ -108,10 +109,29 @@
 
             <div class="promo-hit__price">Цена: 990 руб.</div>
             <input type="button" class="promo-hit__btn btn" value="Заказать">
-
-
-
       </section>
+
+      <div class="cart">
+        <form class="cart__form" id="cart__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="cart__group">
+
+            <h3 class="cart__title">Добавить в корзину</h3>
+            <legend class="cart__text-hint">Выберите размер:</legend>
+
+            <input type="checkbox" name="size" id="size-s" class="cart__prop-value" value="S" checked>
+            <label for="size-s" class="cart__prop">S</label>
+
+            <input type="checkbox" name="size" id="size-m" class="cart__prop-value" value="M">
+            <label for="size-m" class="cart__prop">M</label>
+
+            <input type="checkbox" name="size" id="size-l" class="cart__prop-value"value="L">
+            <label for="size-l" class="cart__prop">L</label>
+
+
+          </fieldset>
+        <input type="submit" class="cart__add" value="Добавить">
+          </form>
+        </div>
 
       <section class="about-company">
         <h2 class="about-company__title">Коротко о нас:</h2>
@@ -197,5 +217,6 @@
         </div>
 
     </footer>
+    <script src="js/menu-toggler.js"></script>
   </body>
 </html>
