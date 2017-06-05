@@ -10,20 +10,20 @@
           background-repeat: no-repeat;
           background-position:  50% 0;
           /* Mobile layout by default */
-          background-image: url( "responsive-images/320.png" );
+          background-image: url( "responsive-images/index-320.png" );
         }
         /* Tablet */
-        @media ( min-width: 760px ) {
+        @media ( min-width: 768px ) {
           HTML {
             /* Tablet layout */
-            background-image: url( "responsive-images/760.png" );
+            background-image: url( "responsive-images/index-768.png" );
           }
         }
         /* Desktop */
-        @media ( min-width: 960px ) {
+        @media ( min-width: 1150px ) {
           HTML {
             /* Desktop layout */
-            background-image: url( "responsive-images/960.png" );
+            background-image: url( "responsive-images/index-1150.png" );
           }
         }
       </style>
@@ -44,7 +44,7 @@
 
       <nav class="main-nav">
         <div class="main-nav__toggle"></div>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--invisible">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -111,25 +111,26 @@
             <input type="button" class="promo-hit__btn btn" value="Заказать">
       </section>
 
-      <div class="cart">
-        <form class="cart__form" id="cart__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="cart__group">
+      <div class="add-to-cart">
+        <form class="add-to-cart__form" id="add-to-cart__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="add-to-cart__group">
 
-            <h3 class="cart__title">Добавить в корзину</h3>
-            <legend class="cart__text-hint">Выберите размер:</legend>
+            <div class="add-to-cart__title">Добавить в корзину</div>
+            <legend class="add-to-cart__text-hint">Выберите размер:</legend>
 
-            <input type="checkbox" name="size" id="size-s" class="cart__prop-value" value="S" checked>
-            <label for="size-s" class="cart__prop">S</label>
+            <label for="size-s" class="add-to-cart__prop">S</label>
+            <input type="radio" name="size" id="size-s" class="add-to-cart__prop-value" value="S" checked>
 
-            <input type="checkbox" name="size" id="size-m" class="cart__prop-value" value="M">
-            <label for="size-m" class="cart__prop">M</label>
+            <label for="size-m" class="add-to-cart__prop">M</label>
+            <input type="radio" name="size" id="size-m" class="add-to-cart__prop-value" value="M">
 
-            <input type="checkbox" name="size" id="size-l" class="cart__prop-value"value="L">
-            <label for="size-l" class="cart__prop">L</label>
+            <label for="size-l" class="add-to-cart__prop">L</label>
+            <input type="radio" name="size" id="size-l" class="add-to-cart__prop-value"value="L">
+
 
 
           </fieldset>
-        <input type="submit" class="cart__add" value="Добавить">
+        <input type="submit" class="add-to-cart__add" value="Добавить">
           </form>
         </div>
 
@@ -177,15 +178,15 @@
           <h2 class="contacts__title">Контакты</h2>
 
           <ul class="contacts__list">
-            <li class="contacts__list-prop">
-              <span class="contacts__list-value">e-mail:</span>
-              <span class="contacts__list-value">
-              <a class="contacts__value-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            <li class="contacts__item">
+              <span class="contacts__name">e-mail:</span>
+              <span class="contacts__text">
+                <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
               </span>
             </li>
-            <li class="contacts__list-prop">
-              <span class="contacts__list-value">адрес:</span>
-              <span class="contacts__list-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+            <li class="contacts__item">
+              <span class="contacts__name">адрес:</span>
+              <span class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
             </li>
           </ul>
 
@@ -212,8 +213,8 @@
         </div>
 
         <div class="page-footer__copyright">
-        Разработано:
-        <a href="https://htmlacademy.ru" class="page-footer__copyright-link">HTML Academy</a>
+          Разработано:
+          <a href="https://htmlacademy.ru" class="page-footer__copyright-link">HTML Academy</a>
         </div>
 
     </footer>

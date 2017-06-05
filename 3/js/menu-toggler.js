@@ -7,5 +7,5 @@ var mainNavList = document.querySelector('.main-nav__list');
 
 mainNavOpen.addEventListener('click', function () {
   toggle.classList.toggle('main-nav__toggle--open');
-  mainNavList.classList.toggle('main-nav__list-invisible');
+  mainNavList.classList.toggle('main-nav__list--invisible');
 });
