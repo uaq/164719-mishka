@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" type="text/css" href="less/blocks/promo-hit.less"/>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,7 +10,6 @@
         HTML {
           background-repeat: no-repeat;
           background-position:  50% 0;
-          background-size: contain;
           /* Mobile layout by default */
           background-image: url( "../responsive/mishka-index-mobile.jpg" );
         }
@@ -37,7 +35,7 @@
 </head>
   <body>
 
-    <header class="page-header">
+    <header class="page-header page-header--index">
       <nav class="main-nav">
         <button class="main-nav__toggle">Меню</button>
         <ul class="main-nav__list">
@@ -45,25 +43,25 @@
           <li class="main-nav__item main-nav__item--logo">
             <a class="main-nav__link main-nav__link--logo" href="">Логотип</a>
           </li>
-          <li class="main-nav__item main-nav__item--catalog">
+          <li class="main-nav__item main-nav__list--invisible main-nav__item--catalog">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item main-nav__item--preorder">
+          <li class="main-nav__item main-nav__list--invisible main-nav__item--preorder">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item main-nav__item--search">
+          <li class="main-nav__item main-nav__list--invisible main-nav__item--search">
             <a class="main-nav__link" href="#">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item main-nav__item--basket">
+          <li class="main-nav__item main-nav__list--invisible main-nav__item--basket">
             <a class="main-nav__link" href="#">Корзина: пока пуста</a>
           </li>
-          <li class="main-nav__item main-nav__item--latest">
+          <li class="main-nav__item main-nav__list--invisible main-nav__item--latest">
             <a class="main-nav__link" href="#">Новые поступления</a>
           </li>
-          <li class="main-nav__item main-nav__item--sale">
+          <li class="main-nav__item main-nav__list--invisible main-nav__item--sale">
             <a class="main-nav__link" href="#">Распродажа</a>
           </li>
-          <li class="main-nav__item main-nav__item--delivery">
+          <li class="main-nav__item main-nav__list--invisible main-nav__item--delivery">
             <a class="main-nav__link" href="#">Бесплатная доставка по России</a>
           </li>
         </ul>
@@ -226,6 +224,6 @@
       </div>
 
     </footer>
-    <script src="js/menu-toggler.js"></script>
+    <!--script src="js/menu-toggler.js"></script-->
   </body>
 </html>
