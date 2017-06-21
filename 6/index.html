@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" type="text/css" href="less/blocks/promo-hit.less"/>
+    <link rel="stylesheet" type="text/css" href="less/blocks/page-footer.less"/>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -87,38 +87,40 @@
     <main>
 
       <section class="promo-hit">
-      <div class="promo-hit__wrapper">
-        <h2 class="promo-hit__title"><a class="promo-hit__item-link" href="#">Вязаные корзинки</a></h2>
-          <div class="promo-hit__marker">Товар недели</div>
+        <div class="promo-hit__wrapper">
+          <div class="promo-hit__inner">
+            <h2 class="promo-hit__title"><a class="promo-hit__item-link" href="#">Вязаные корзинки</a></h2>
+              <div class="promo-hit__marker">Товар недели</div>
 
-            <p class="promo-hit__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+                <p class="promo-hit__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
-          <ul class="promo-hit__props">
-            <li class="promo-hit__prop-name">
-              <span class="promo-hit__prop">Цвет:</span>
-              <span class="promo-hit__prop promo-hit__prop-value">&laquo;Тиффани&raquo;/серый</span>
-            </li>
-            <li class="promo-hit__prop-name">
-              <span class="promo-hit__prop">Диаметр:</span>
-              <span class="promo-hit__prop promo-hit__prop-value">25 см</span>
-            </li>
-            <li class="promo-hit__prop-name">
-              <span class="promo-hit__prop">Высота:</span>
-              <span class="promo-hit__prop promo-hit__prop-value">15 см</span>
-            </li>
-          </ul>
-          <div class="promo-hit__pict-wrapper">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-              <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"  alt="Вязаные корзинки" width="260" height="315" class="promo-hit__pict">
-            </picture>
-          </div>
+              <ul class="promo-hit__props">
+                <li class="promo-hit__prop-name">
+                  <span class="promo-hit__prop">Цвет:</span>
+                  <span class="promo-hit__prop promo-hit__prop-value">&laquo;Тиффани&raquo;/серый</span>
+                </li>
+                <li class="promo-hit__prop-name">
+                  <span class="promo-hit__prop">Диаметр:</span>
+                  <span class="promo-hit__prop promo-hit__prop-value">25 см</span>
+                </li>
+                <li class="promo-hit__prop-name">
+                  <span class="promo-hit__prop">Высота:</span>
+                  <span class="promo-hit__prop promo-hit__prop-value">15 см</span>
+                </li>
+              </ul>
+              <div class="promo-hit__pict-wrapper">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                  <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"  alt="Вязаные корзинки" width="260" height="315" class="promo-hit__pict">
+                </picture>
+              </div>
 
-          <div class="promo-hit__price">Цена: 990 руб.</div>
-          <div class="promo-hit__btn-wrapper">
-            <input type="button" class="promo-hit__btn btn" value="Заказать">
-          </div>
+              <div class="promo-hit__price">Цена: 990 руб.</div>
+              <div class="promo-hit__btn-wrapper">
+                <input type="button" class="promo-hit__btn btn" value="Заказать">
+              </div>
+            </div>
         </div>
       </section>
 
@@ -182,29 +184,29 @@
       </section>
 
       <section class="contacts">
-
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__inner">
+            <h2 class="contacts__title">Контакты</h2>
 
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <span class="contacts__name">e-mail:</span>
-              <span class="contacts__text">
-                <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-              </span>
-            </li>
-            <li class="contacts__item">
-              <span class="contacts__name">адрес:</span>
-              <span class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
-            </li>
-          </ul>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <span class="contacts__name">e-mail:</span>
+                <span class="contacts__text">
+                  <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+                </span>
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__name">адрес:</span>
+                <span class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+              </li>
+            </ul>
 
+          </div>
+
+          <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.364376112064!2d30.3209514!3d59.936643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f8f62bb3f%3A0xdbd8ceddae86ceba!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDI5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1497013624864" width="100%" height="458" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
         </div>
-
-        <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.364376112064!2d30.3209514!3d59.936643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f8f62bb3f%3A0xdbd8ceddae86ceba!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDI5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1497013624864" width="100%" height="458" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-
       </section>
 
       <div class="feedback">
@@ -214,22 +216,22 @@
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link"></a>
+        </div>
 
-      <div class="page-footer__logo">
-        <a href="#" class="page-footer__logo-link"></a>
+        <div class="page-footer__socials socials">
+          <a href="https://www.instagram.com/htmlacademy/" class="socials__icon socials__icon--insta">Мы в Инстаграм</a>
+          <a href="https://www.facebook.com/htmlacademy" class="socials__icon socials__icon--fb">Мы в Фейсбуке</a>
+          <a href="https://twitter.com/htmlacademy_ru" class="socials__icon socials__icon--twi">Мы в Твиттере</a>
+        </div>
+
+        <div class="page-footer__copyright">
+          Разработано
+          <a href="https://htmlacademy.ru" class="page-footer__copyright-link">HTML Academy</a>
+        </div>
       </div>
-
-      <div class="page-footer__socials socials">
-        <a href="https://www.instagram.com/htmlacademy/" class="socials__icon socials__icon--insta">Мы в Инстаграм</a>
-        <a href="https://www.facebook.com/htmlacademy" class="socials__icon socials__icon--fb">Мы в Фейсбуке</a>
-        <a href="https://twitter.com/htmlacademy_ru" class="socials__icon socials__icon--twi">Мы в Твиттере</a>
-      </div>
-
-      <div class="page-footer__copyright">
-        Разработано
-        <a href="https://htmlacademy.ru" class="page-footer__copyright-link">HTML Academy</a>
-      </div>
-
     </footer>
     <!--script src="js/menu-toggler.js"></script-->
   </body>
