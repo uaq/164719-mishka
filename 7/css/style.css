@@ -1220,11 +1220,33 @@ fieldset {
   margin-top: 25px;
 }
 .production__video-block {
+  position: relative;
   -ms-flex-order: 2;
       order: 2;
   background-image: url("../img/video-mobile@1x.jpg");
   background-position: top center;
   background-size: cover;
+}
+.production__video-control {
+  position: absolute;
+  top: 40px;
+  left: 82px;
+  width: 100px;
+  height: 80px;
+  background-image: url(../img/icon-play.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+  cursor: pointer;
+}
+.production__video-control:hover {
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+.production__video-control:active {
+  transform: scale(0.8);
+  opacity: 0.3;
+  transition-duration: 0.5s;
 }
 .promo-hit {
   background-image: url(/img/bg-zigzag-line.svg);
@@ -1717,6 +1739,9 @@ fieldset {
     background-image: url("../img/map-tablet@1x.jpg");
     margin-top: 30px;
   }
+  .contacts__map-frame {
+    width: 100%;
+  }
   .contacts__link {
     font-size: 17px;
   }
@@ -2004,6 +2029,12 @@ fieldset {
     height: 465px;
     width: auto;
     margin: 0 0 0 -60px;
+  }
+  .production__video-control {
+    top: 190px;
+    left: 285px;
+    width: 100px;
+    height: 100px;
   }
   .promo-hit {
     background-position: 15px bottom;
