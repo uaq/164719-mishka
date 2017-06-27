@@ -14,6 +14,7 @@ var svgmin = require("gulp-svgmin");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
+var uglify = require('gulp-uglify');
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
@@ -104,6 +105,13 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"));
 });
 
+gulp.task('compress', function () {
+  return gulp.src('js/*.js')
+    .pipe(uglify())
+    .pipe(rename("modal-window-cart.min.js"))
+    .pipe(gulp.dest('build/js'));
+});
+
 gulp.task("images", function() {
   return gulp.src("build/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
@@ -130,6 +138,7 @@ gulp.task("build", function(fn) {
     "style",
     "images",
     "symbols",
+    "compress",
     fn
   );
 });

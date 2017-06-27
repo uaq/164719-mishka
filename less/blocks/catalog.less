@@ -38,7 +38,7 @@
 
   @media @tablets {
     font-size: 17px;
-    padding: 23px 2px;
+    padding: 24px 5px;
   }
 
   @media @desktop {
@@ -70,14 +70,16 @@
     justify-content: space-between;
     align-items: stretch;
     width: 94%;
-    height: 332px;
-    max-height: 550px;
-    margin: 27px 0 27px 0;
+    height: 100%;
+    max-height: 100%;
+    min-height: 332px;
+    margin: 27px 0 25px;
     padding: 0;
   }
 
   @media @desktop {
     flex-direction: column;
+    justify-content: flex-start;
     width: 315px;
     min-height: 659px;
     margin: 40px 0 15px 0;
@@ -110,7 +112,7 @@
 
   @media @tablets {
     font-size: 20px;
-    margin: 27px 40px 0 0;
+    margin: 25px 41px 0 0;
   }
 
   @media @desktop {
@@ -139,6 +141,7 @@
   @media @desktop {
     flex-basis: 30%;
     width: 84%;
+    min-height: 186px;
     padding: 0 25px 8px 27px;
   }
 }
@@ -147,12 +150,17 @@
   @media @tablets {
     flex-basis: 50%;
     height: 100%;
-    width: auto;
+    min-height: 320px;
+    max-height: 335px;
+    min-width: 325px;
+    width: 100%;
   }
 
   @media @desktop {
-    width: 100%;
-    flex-basis: 70%;;
+    flex-basis: 70%;
+    min-height: 320px;
+    max-height: 100%;
+    min-width: initial;
   }
 }
 
